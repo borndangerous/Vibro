@@ -46,6 +46,7 @@ static NSString *const kVBURLProtocolProperty = @"kVBURLProtocolProperty";
 }
 
 - (void)notify {
+    NSLog(@"Vibro > notify");
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
